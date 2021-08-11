@@ -10,7 +10,7 @@ async def start(c, m):
     owner_username = owner.username if owner.username else 'Ns_bot_updates'
 
     # start text
-    text = f"""Hey! {m.from_user.mention(style='md')},
+    text = f"""Hey {id}how are you! {m.from_user.mention(style='md')},
 
 💡 ** I am Telegram ShowJson Bot**
 
@@ -22,7 +22,7 @@ async def start(c, m):
     # Buttons
     buttons = [
         [
-            InlineKeyboardButton('My Father 👨‍✈️', url=f"https://t.me/{owner_username}")
+            InlineKeyboardButton('My Father 👨‍✈️', url=f"https://t.me/beereshbanakards")
         ]
     ]
     await m.reply_text(
@@ -55,7 +55,7 @@ async def inline_json(c, m):
       return
 
     text = f'`{m}`'
-    switch_pm_text = f"Hey i sent the json in PM 😉"
+    switch_pm_text = f"Hey i sent the json in PM 👅"
     try:
         if len(text) <= 4096:
             await c.send_message(chat_id=m.from_user.id, text=text)
